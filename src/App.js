@@ -3,8 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import { useOnClickOutside } from './hooks';
 import { GlobalStyles } from './global';
 import { theme } from './theme';
-import Burger from './components/Burger';
-import Menu from './components/Menu';
+import { Burger, Menu } from './components';
 import FocusLock from 'react-focus-lock';
 
 function App() {
