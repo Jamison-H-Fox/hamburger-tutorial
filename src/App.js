@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { useOnClickOutside } from './hooks';
-import { GlobalStyles } from './global';
-import { theme } from './theme';
+import { useOnClickOutside } from './hooks/hooks';
+import { GlobalStyles } from './styles/global';
+import { theme } from './styles/theme';
 import { Burger, Menu } from './components';
 import FocusLock from 'react-focus-lock';
 
