@@ -3,18 +3,20 @@ import { bool } from 'prop-types';
 import styled from 'styled-components';
 
 const StyledMenu = styled.nav`
-  display: ${({ open }) => open ? 'flex' : 'none'};
+  // display: ${({ open }) => open ? 'flex' : 'none'};
+  display: flex;
   flex-direction: column;
   justify-content: center;
   background: ${({ theme }) => theme.primaryLight};
-  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(101%)'};
+  // transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(101%)'};
+  visibility: ${({ open }) => open ? 'visible' : 'hidden'};
   height: 100vh;
   text-align: left;
   padding: 2rem;
   position: absolute;
   top: 0;
   right: 0;
-  transition: transform 0.3s ease-in-out;
+  transition: visibility 0.3s ease-in-out;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
       width: 75%;
