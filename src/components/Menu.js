@@ -15,7 +15,6 @@ const StyledMenu = styled.nav`
   top: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
-  overflow: hidden;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
       width: 75%;

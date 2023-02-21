@@ -21,7 +21,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
-        <div ref={node}>
+        <div className='menu-container' ref={node}>
           <FocusLock disabled={!open}>
             <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
             <Menu open={open} setOpen={setOpen} id={menuId} />
