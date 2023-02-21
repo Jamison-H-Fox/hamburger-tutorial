@@ -3,7 +3,7 @@ import { bool } from 'prop-types';
 import styled from 'styled-components';
 
 const StyledMenu = styled.nav`
-  display: flex;
+  display: ${({ open }) => open ? 'flex' : 'none'};
   flex-direction: column;
   justify-content: center;
   background: ${({ theme }) => theme.primaryLight};

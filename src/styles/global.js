@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
   *, *::after, *::before {
     box-sizing: border-box;
   }
-
+  
   body {
     display: flex;
     justify-content: center;
@@ -19,9 +19,9 @@ export const GlobalStyles = createGlobalStyle`
     height: 100vh;
     text-rendering: optimizeLegibility;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    overflow: hidden;
+    overflow-x: hidden;
   }
-
+  
   h1 {
     font-size: 2rem;
     text-align: center;

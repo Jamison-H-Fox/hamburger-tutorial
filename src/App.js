@@ -21,7 +21,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
-        <div className='menu-container' ref={node}>
+        <div ref={node}>
           <FocusLock disabled={!open}>
             <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
             <Menu open={open} setOpen={setOpen} id={menuId} />
@@ -31,7 +31,6 @@ function App() {
           <h1>Hello. This is burger menu tutorial</h1>
           <h2 style={styleObj}>🍔</h2>
         </div>
-        
       </>
     </ThemeProvider>
   );
